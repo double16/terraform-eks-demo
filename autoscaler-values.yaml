@@ -1,0 +1,11 @@
+# helm install stable/cluster-autoscaler -f autoscaler-values.yaml --namespace kube-system
+
+autoDiscovery:
+  clusterName: terraform-eks-demo
+
+rbac:
+  create: true
+
+cloudProvider: aws
+
+sslCertPath: /etc/ssl/certs/ca-bundle.crt 
